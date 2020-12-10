@@ -1,4 +1,11 @@
+import { Button } from 'antd';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>test</div>, document.getElementById('root'));
+const App = () => (
+  <div>
+    <Button>Test</Button>
+  </div>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
