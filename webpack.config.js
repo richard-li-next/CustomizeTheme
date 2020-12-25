@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        include: [path.resolve('node_modules')],
+        include: [path.resolve(__dirname, 'node_modules'), path.join(__dirname, './src')],
         use: [
           'style-loader',
           'css-loader',
