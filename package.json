@@ -9,7 +9,6 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@teamsupercell/typings-for-css-modules-loader": "^2.4.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "css-loader": "^5.0.1",
