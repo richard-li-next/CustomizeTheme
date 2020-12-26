@@ -23,26 +23,14 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
-        options: {
-          transpileOnly: true,
-          getCustomTransformers: () => ({
-            before: [
-              tsImportPlugin({
-                libraryName: 'antd',
-                libraryDirectory: 'lib',
-                style: true,
-              }),
-            ],
-          }),
-          compilerOptions: {
-            module: 'es2015',
-          },
-        },
         exclude: /node_modules/,
       },
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.less$/,
-        include: [path.resolve(__dirname, 'node_modules'), path.join(__dirname, './src')],
         use: [
           'style-loader',
           'css-loader',
