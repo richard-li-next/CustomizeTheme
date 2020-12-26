@@ -10,20 +10,20 @@ import {
   TimePicker,
 } from 'antd';
 import React, { useState } from 'react';
-import styles from './styles.less';
+import './styles.less';
 
 export default function App() {
   const [select, setSelect] = useState('');
 
   return (
-    <div className={styles.container}>
-      <section className={styles.box}>
+    <div className={'container'}>
+      <section className={'box'}>
         <Input />
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Input.Search />
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Select placeholder="Select" style={{ width: '100%' }}>
           <Select.Option value="jack">Jack</Select.Option>
           <Select.Option value="lucy">Lucy</Select.Option>
@@ -32,16 +32,16 @@ export default function App() {
           </Select.Option>
         </Select>
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Calendar />
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <DatePicker />
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <TimePicker />
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Timeline>
           <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
           <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
@@ -49,13 +49,13 @@ export default function App() {
           <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
         </Timeline>
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Radio>Radio</Radio>
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Tag>Tag 1</Tag>
       </section>
-      <section className={styles.box}>
+      <section className={'box'}>
         <Checkbox>Checkbox</Checkbox>
       </section>
     </div>
